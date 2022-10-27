@@ -1,16 +1,15 @@
-### Hi there 👋
+local life = require("life")
+local action = require("action")
 
-<!--
-**if-the-Lord-wills/if-the-Lord-wills** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+local function main()
+	repeat
+		if the_Lord.wills then
+			task.spawn(action.immediate)
+			task.spawn(action.prayer)
+			task.defer(action.next)
+		else
+			break
+		end
+	until life.finished
+	return 1
+end
